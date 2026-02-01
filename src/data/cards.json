@@ -1,0 +1,888 @@
+{
+  "cards": [
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "paladin",
+      "subtype": "front",
+      "title": "Divine Favor",
+      "description": "Any ally gains 2\u00A0â or\u00A0ê\u00A0loses 2\u00A0î.",
+      "cost": "3\u00A0â",
+      "image": "divine-favor",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "paladin",
+      "subtype": "front",
+      "title": "Holy Protection",
+      "description": "Blocks the\u00A0next\u00A0ê\u00A0card effect on\u00A0a\u00A0target\u00A0player.<br>Only one\u00A0\"Holy\u00A0Protection\" can be active at\u00A0a\u00A0time, refresh after it is triggered.",
+      "cost": "7\u00A0â",
+      "image": "holy-protection",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "paladin",
+      "subtype": "front",
+      "image": "paladin-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "rogue",
+      "subtype": "front",
+      "title": "Sneak Attack",
+      "description": "-2\u00A0î.<br>If ê has the\u00A0ý\u00A0condition, deal\u00A0an\u00A0additional 2\u00A0î.",
+      "cost": "3\u00A0â",
+      "image": "sneak-attack",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "rogue",
+      "subtype": "front",
+      "title": "Rogue's Gambit",
+      "description": "Discard up to 5 cards from\u00A0your hand, reduce\u00A0î (-1\u00A0î\u00A0for\u00A01\u00A0card, -3\u00A0î\u00A0for\u00A02, -5\u00A0î\u00A0for\u00A03, and\u00A0-8\u00A0î\u00A0for\u00A05).",
+      "cost": "7\u00A0â",
+      "image": "rogues-gambit",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "rogue",
+      "subtype": "front",
+      "image": "rogue-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "mage",
+      "subtype": "front",
+      "title": "Arcane Focus",
+      "description": "+2 â, immediately\u00A0draw\u00A01\u00A0card.",
+      "cost": "3\u00A0â",
+      "image": "arcane-focus",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "mage",
+      "subtype": "front",
+      "title": "Arcane Surge",
+      "description": "You immediately draw and\u00A0may play an\u00A0additional card this\u00A0turn.<br>For every card you play this\u00A0turn, ê\u00A0discards 2\u00A0cards from the ê\u00A0deck and\u00A0loses\u00A01\u00A0î.",
+      "cost": "8\u00A0â",
+      "image": "arcane-surge",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "mage",
+      "subtype": "front",
+      "image": "mage-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warrior",
+      "subtype": "front",
+      "title": "Cleave",
+      "description": "You immediately draw and\u00A0may play an additional card this turn.",
+      "cost": "4\u00A0â",
+      "image": "cleave",
+      "symbol": ""
+    },
+    {
+      "cardID": [8],
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warrior",
+      "subtype": "front",
+      "title": "Double\u2011Edged Sword",
+      "description": "Each card that\u00A0you\u00A0play lowers\u00A0î by\u00A0an\u00A0additional 1\u00A0î.<br>You may play 2\u00A0additional cards this\u00A0turn.<br>ý.",
+      "cost": "9\u00A0â",
+      "image": "double-edged-sword",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "warrior",
+      "subtype": "front",
+      "image": "warrior-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "ranger",
+      "subtype": "front",
+      "title": "Goodberry",
+      "description": "If used on yourself, you\u00A0may\u00A0play an\u00A0additional card.<br>Any one other player gains\u00A01\u00A0â and resupplies 1\u00A0additional card at\u00A0the\u00A0end of the turn.",
+      "cost": "4\u00A0â",
+      "image": "goodberry",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "ranger",
+      "subtype": "front",
+      "title": "Binding Shot",
+      "description": "ê\u00A0ý.<br>You may play 1\u00A0additional\u00A0card this\u00A0turn,\u00A0but you do not\u00A0draw any\u00A0cards from\u00A0card\u00A0effects played after\u00A0activation.",
+      "cost": "7\u00A0â",
+      "image": "binding-shot",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "ranger",
+      "subtype": "front",
+      "image": "ranger-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "priest",
+      "subtype": "front",
+      "title": "Healing Word",
+      "description": "Remove ý\u00A0from any\u00A0chosen player.<br>You immediately draw 1 card.<br>You can use this\u00A0on\u00A0yourself while\u00A0having the\u00A0ý\u00A0condition.",
+      "cost": "4\u00A0â",
+      "image": "healing-word",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "priest",
+      "subtype": "front",
+      "title": "Divine Restoration",
+      "description": "Remove \"Lingering Curse\" from any chosen player.<br>You immediately draw 2\u00A0cards and may play 2\u00A0additional cards this turn.",
+      "cost": "8\u00A0â",
+      "image": "divine-restoration",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "priest",
+      "subtype": "front",
+      "image": "priest-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "druid",
+      "subtype": "front",
+      "title": "Will o' Wisp",
+      "description": "-1\u00A0î and discard 1\u00A0card from\u00A0the\u00A0ê\u00A0deck.",
+      "cost": "4\u00A0â",
+      "image": "will-o-wisp",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "druid",
+      "subtype": "front",
+      "title": "Nature's Blessing",
+      "description": "Every card played after activating this\u00A0ability lowers\u00A0î by\u00A0an\u00A0additional 1\u00A0î.",
+      "cost": "8\u00A0â",
+      "image": "natures-blessing",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "druid",
+      "subtype": "front",
+      "image": "druid-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warlock",
+      "subtype": "front",
+      "title": "Eldritch Blast",
+      "description": "-1\u00A0î for each card that\u00A0lowers\u00A0î played before using this ability, including the Warrior's \"Double\u2011Edged Sword\" and\u00A0the Druid's \"Nature's Blessing\".",
+      "cost": "4\u00A0â",
+      "image": "eldritch-blast",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warlock",
+      "subtype": "front",
+      "title": "Borrowed Power",
+      "description": "Reveal 1\u00A0ê card and\u00A0reverse its effect.<br>If\u00A0î\u2011boosting, now lowers.<br>Or, if player\u2011targeting, now\u00A0targets ê.",
+      "cost": "8\u00A0â",
+      "image": "borrowed-power",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "warlock",
+      "subtype": "front",
+      "image": "warlock-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "barbarian",
+      "subtype": "front",
+      "title": "Brutal Critical",
+      "description": "You immediately draw\u00A01\u00A0card,\u00A0then you\u00A0may\u00A0play\u00A01\u00A0additional card this turn.<br>+1 â.<br>ý.",
+      "cost": "2\u00A0â",
+      "image": "brutal-critical",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "barbarian",
+      "subtype": "front",
+      "title": "Relentless Rage",
+      "description": "You can use this on\u00A0yourself\u00A0while having the\u00A0ý\u00A0condition.<br>-3\u00A0î, and\u00A0if\u00A0you have the ý\u00A0condition, end\u00A0it and lower î by\u00A0an\u00A0additional 3\u00A0î.<br>ý.",
+      "cost": "6\u00A0â",
+      "image": "relentless-rage",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "barbarian",
+      "subtype": "front",
+      "image": "barbarian-front"
+    },
+    {
+      "isDeck": false,
+      "type": "bard",
+      "subtype": "front",
+      "title": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Sed adipisci iste eius itaque unde eligendi quam culpa quas?<br>Doloremque, earum?",
+      "cost": "4\u00A0â",
+      "image": "1",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "type": "bard",
+      "subtype": "front",
+      "title": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Libero sit maxime doloribus vitae nihil quasi nobis.<br>Aspernatur voluptatem numquam impedit!",
+      "cost": "9\u00A0â",
+      "image": "2",
+      "symbol": ""
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "bard",
+      "subtype": "front",
+      "image": "bard-front"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "wizard",
+      "subtype": "front",
+      "image": "wizard-front"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "power",
+      "title": "Tactical Insight",
+      "description": "Gain 2\u00A0â and resupply 1\u00A0additional card at\u00A0the\u00A0end\u00A0of\u00A0the\u00A0turn.",
+      "image": "tactical-insight",
+      "amount": 3,
+      "symbol": "á"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "power",
+      "title": "Potion of Speed",
+      "description": "Gain 1\u00A0â and resupply 1\u00A0additional card at\u00A0the\u00A0end\u00A0of\u00A0the\u00A0turn.",
+      "image": "potion-of-speed",
+      "amount": 3,
+      "symbol": "á"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "power",
+      "title": "Focused Training",
+      "description": "Gain 5\u00A0â, but ý.",
+      "image": "focused-training",
+      "amount": 2,
+      "symbol": "á"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "power",
+      "title": "Elixir of Strength",
+      "description": "Gain 2\u00A0â and you cannot be\u00A0made to ý.",
+      "image": "elixir-of-strength",
+      "amount": 3,
+      "symbol": "á"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "power",
+      "title": "Scroll of Haste",
+      "description": "Gain 1\u00A0â and\u00A0reshuffle\u00A0this\u00A0card into\u00A0the\u00A0deck.<br>You immediately draw\u00A0a\u00A0card and may play another\u00A0card this\u00A0turn.",
+      "image": "scroll-of-haste",
+      "amount": 2,
+      "symbol": "á"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Power Lock",
+      "description": "ê\u00A0ý.<br>No one resupplies at\u00A0the\u00A0end\u00A0of\u00A0the\u00A0turn.",
+      "image": "power-lock",
+      "amount": 2,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "+1 Magic Weapon",
+      "description": "-2\u00A0î, +2\u00A0â.",
+      "image": "plus-one-magic-weapon",
+      "amount": 2,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Mana Drain",
+      "description": "-3\u00A0î, +1\u00A0â.",
+      "image": "mana-drain",
+      "amount": 3,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Power Syphon",
+      "description": "-1\u00A0î, +2\u00A0â.<br>Resupply 1\u00A0additional\u00A0card.",
+      "image": "power-syphon",
+      "amount": 2,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Silence",
+      "description": "If ê reveals a ú spell this\u00A0turn, negate that card.<br>Else, -3\u00A0î.",
+      "image": "silence",
+      "amount": 1,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Nullify Surge",
+      "description": "If ê gains\u00A0î from a\u00A0card\u00A0effect\u00A0this turn, negate that card.<br>Else, -2\u00A0î.",
+      "image": "nullify-surge",
+      "amount": 1,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "hindrance",
+      "title": "Brain Fog",
+      "description": "If ê\u00A0reveals a card that\u00A0targets players this\u00A0turn, negate that card.<br>Else, -1 î.<br>Discard the top 2 cards from\u00A0the\u00A0ê\u00A0deck.",
+      "image": "brain-fog",
+      "amount": 1,
+      "symbol": "é"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Black Market",
+      "description": "Draw 3\u00A0cards from\u00A0the\u00A0Player\u00A0Deck - you\u00A0may choose up to 2\u00A0cards - the rest goes to the bottom of the deck, discard 1\u00A0card\u00A0from your hand.<br>You may play an additional card this turn.",
+      "image": "black-market",
+      "amount": 1,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Pop-up Market",
+      "description": "Draw 3\u00A0cards from\u00A0the\u00A0Player\u00A0Deck.<br>You choose 1\u00A0card and\u00A0the\u00A0rest goes to\u00A0the\u00A0bottom of\u00A0the\u00A0deck.<br>You may resupply 1\u00A0additional card at the end of turn.",
+      "image": "pop-up-market",
+      "amount": 1,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Focused Recovery",
+      "description": "Remove ý from an ally, but\u00A0they do not resupply at\u00A0the\u00A0end\u00A0of\u00A0the\u00A0turn.",
+      "image": "focused-recovery",
+      "amount": 1,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Last Stand",
+      "description": "All players gain 3\u00A0â, but\u00A0you\u00A0do\u00A0not resupply at\u00A0the\u00A0end of your turn.",
+      "image": "last-stand",
+      "amount": 3,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Action Surge",
+      "description": "Remove ý from an ally.",
+      "image": "action-surge",
+      "amount": 2,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Tactical Shift",
+      "description": "Immediately draw 3\u00A0cards, but\u00A0ý.",
+      "image": "tactical-shift",
+      "amount": 1,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Battle Insight",
+      "description": "Immediately draw 2\u00A0cards.",
+      "image": "battle-insight",
+      "amount": 2,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Cunning Preparation",
+      "description": "Immediately draw 1\u00A0card and\u00A0reshuffle this card into\u00A0the deck.<br>You may play an\u00A0additional\u00A0card<br>this\u00A0turn.",
+      "image": "cunning-preparation",
+      "amount": 2,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "utility",
+      "title": "Delayed Focus",
+      "description": "You may play an\u00A0additional card this\u00A0turn.<br>ý.<br>During your turn after that, immediately draw 2 additional cards, gain 1 â, and you may play an additional card.",
+      "image": "delayed-focus",
+      "amount": 2,
+      "symbol": "í"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "curse",
+      "title": "Unstable Magic",
+      "description": "Shuffle your hand into\u00A0the\u00A0deck, then\u00A0draw\u00A0one\u00A0card fewer than you had in hand.",
+      "image": "unstable-magic",
+      "amount": 1,
+      "symbol": "ó"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "curse",
+      "title": "Fatigue",
+      "description": "Your next 3\u00A0â\u2011boosting cards are reduced by 1\u00A0â.<br>[Lingering Curse]",
+      "image": "fatigue",
+      "amount": 1,
+      "symbol": "ó"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "curse",
+      "title": "Arcane Feedback",
+      "description": "After drawing this card, the\u00A0player must reveal another card from\u00A0the\u00A0Player\u00A0Deck.<br>If it results in î\u00A0loss, you\u00A0lose â\u00A0equal to half of\u00A0that\u00A0amount.<br>Or, if it results in â\u00A0gain, î\u00A0gains half that amount.<br>Discard any other cards.",
+      "image": "arcane-feedback",
+      "amount": 1,
+      "symbol": "ó"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "curse",
+      "title": "Arcane Rot",
+      "description": "Each time you play a card, lose 1\u00A0â.<br>This card stays active until\u00A0you lose all\u00A0â.<br>[Lingering Curse]",
+      "image": "arcane-rot",
+      "amount": 1,
+      "symbol": "ó"
+    },
+    {
+      "isDeck": true,
+      "type": "player",
+      "subtype": "curse",
+      "title": "Amplify Damage",
+      "description": "The next ê card targeting you is triggered twice.<br>This\u00A0curse remains active until\u00A0triggered, then\u00A0discard it.<br>[Lingering Curse]",
+      "image": "amplify-damage",
+      "amount": 1,
+      "symbol": "ó"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Inferno Pulse",
+      "description": "+5\u00A0î.",
+      "image": "inferno-pulse",
+      "amount": 2,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Dark Ritual",
+      "description": "+2\u00A0î, the player with\u00A0the\u00A0most\u00A0â ý.",
+      "image": "dark-ritual",
+      "amount": 2,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Mana Overload",
+      "description": "ê\u00A0gains 1\u00A0î for each player\u00A0in\u00A0the game.<br>Reshuffle this card back\u00A0into\u00A0the\u00A0ê\u00A0Deck.<br>Discard the top 2\u00A0cards of\u00A0the\u00A0ê\u00A0Deck.",
+      "image": "mana-overload",
+      "amount": 2,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Power Surge Backlash",
+      "description": "-3\u00A0î, ê gains 1\u00A0î for\u00A0each\u00A0card revealed next turn.<br>ê\u00A0reveals an additional card next turn.",
+      "image": "power-surge-backlash",
+      "amount": 1,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Magic Missile",
+      "description": "+2\u00A0î, ê gains 1\u00A0î for\u00A0every\u00A02\u00A0players in\u00A0the\u00A0game.",
+      "image": "magic-missile",
+      "amount": 2,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "power-surge",
+      "title": "Energy Outburst",
+      "description": "+4\u00A0î, discard the\u00A0top\u00A02\u00A0cards to\u00A0the\u00A0bottom of\u00A0the\u00A0discard pile.",
+      "image": "energy-outburst",
+      "amount": 2,
+      "symbol": "š"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "disruption",
+      "title": "Magical Chaos",
+      "description": "ê reveals an additional card from his deck.<br>If it is a\u00A0î\u2011boosting card, ê\u00A0gains double\u00A0the amount.<br>Else, the revealed card resolves normally as if it\u00A0was\u00A0played and ê\u00A0ý.",
+      "image": "magical-chaos",
+      "amount": 2,
+      "symbol": "ú"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "disruption",
+      "title": "Hex of Exhaustion",
+      "description": "The last player that played a\u00A0card\u00A0ý and\u00A0loses\u00A02\u00A0â.<br>While this card is at the top\u00A0of\u00A0the\u00A0ê\u00A0Discard\u00A0Pile, ê\u00A0cannot be made to ý.",
+      "image": "hex-of-exhaustion",
+      "amount": 3,
+      "symbol": "ú"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "disruption",
+      "title": "Wild Mana Flux",
+      "description": "The player with the most cards reshuffles their hand into\u00A0the\u00A0deck, draws 3\u00A0cards, and\u00A0loses 2\u00A0â.",
+      "image": "wild-mana-flux",
+      "amount": 2,
+      "symbol": "ú"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "disruption",
+      "title": "Backlash Shock",
+      "description": "ê reveals an additional card from the ê Deck.<br>If it is not a î\u2011boosting card, negate the effect.<br>All players lose 2 â.",
+      "image": "backlash-shock",
+      "amount": 2,
+      "symbol": "ú"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "disruption",
+      "title": "Chain Lightning",
+      "description": "All players shuffle their\u00A0hands into the deck, then\u00A0draw one\u00A0card fewer than they had and lose 1\u00A0â.<br>ê gains 1\u00A0î  for every player affected by\u00A0this card.",
+      "image": "chain-lightning",
+      "amount": 2,
+      "symbol": "ú"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "steady-power-gain",
+      "title": "Scorching Focus",
+      "description": "+1\u00A0î, ê\u00A0reveals an additional card from\u00A0the\u00A0ê\u00A0deck.",
+      "image": "scorching-focus",
+      "amount": 3,
+      "symbol": "ô"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "steady-power-gain",
+      "title": "Flame Burst",
+      "description": "+3\u00A0î.",
+      "image": "flame-burst",
+      "amount": 3,
+      "symbol": "ô"
+    },
+    {
+      "isDeck": true,
+      "type": "wizard",
+      "subtype": "steady-power-gain",
+      "title": "Smoldering Growth",
+      "description": "+4\u00A0î.",
+      "image": "smoldering-growth",
+      "amount": 2,
+      "symbol": "ô"
+    },
+
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "paladin",
+      "subtype": "back",
+      "image": "paladin-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "paladin",
+      "subtype": "back",
+      "title": "Paladin",
+      "image": "paladin-front",
+      "amount": 2
+    },
+
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "rogue",
+      "subtype": "back",
+      "image": "rogue-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "rogue",
+      "subtype": "back",
+      "title": "Rogue",
+      "image": "rogue-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "mage",
+      "subtype": "back",
+      "image": "mage-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "mage",
+      "subtype": "back",
+      "title": "Mage",
+      "image": "mage-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "warrior",
+      "subtype": "back",
+      "image": "warrior-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warrior",
+      "subtype": "back",
+      "title": "Warrior",
+      "image": "warrior-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "ranger",
+      "subtype": "back",
+      "image": "ranger-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "ranger",
+      "subtype": "back",
+      "title": "Ranger",
+      "image": "ranger-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "priest",
+      "subtype": "back",
+      "image": "priest-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "priest",
+      "subtype": "back",
+      "title": "Priest",
+      "image": "priest-front",
+      "amount": 2
+    },
+
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "druid",
+      "subtype": "back",
+      "image": "druid-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "druid",
+      "subtype": "back",
+      "title": "Druid",
+      "image": "druid-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "warlock",
+      "subtype": "back",
+      "image": "warlock-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "warlock",
+      "subtype": "back",
+      "title": "Warlock",
+      "image": "warlock-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "barbarian",
+      "subtype": "back",
+      "image": "barbarian-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "barbarian",
+      "subtype": "back",
+      "title": "Barbarian",
+      "image": "barbarian-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "bard",
+      "subtype": "back",
+      "image": "bard-back"
+    },
+    {
+      "isDeck": false,
+      "isCharacter": false,
+      "type": "bard",
+      "subtype": "back",
+      "title": "Bard",
+      "image": "bard-front",
+      "amount": 2
+    },
+    {
+      "isDeck": false,
+      "isCharacter": true,
+      "type": "wizard",
+      "subtype": "back",
+      "image": "wizard-back"
+    },
+    {
+      "isDeck": true,
+      "isCharacter": false,
+      "type": "player",
+      "subtype": "back",
+      "title": "Player deck back",
+      "image": "player-deck-back",
+      "amount": 45
+    },
+    {
+      "isDeck": true,
+      "isCharacter": false,
+      "type": "wizard",
+      "subtype": "back",
+      "title": "Wizard deck back",
+      "image": "wizard-deck-back",
+      "amount": 30
+    }
+  ]
+}

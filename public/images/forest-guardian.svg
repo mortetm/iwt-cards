@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="420" viewBox="0 0 300 420">
+  <defs>
+    <linearGradient id="forest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a1a"/>
+      <stop offset="100%" style="stop-color:#0a2a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="420" fill="url(#forest)"/>
+  <ellipse cx="150" cy="180" rx="70" ry="90" fill="#2a5a2a"/>
+  <circle cx="130" cy="160" r="12" fill="#90EE90"/>
+  <circle cx="170" cy="160" r="12" fill="#90EE90"/>
+  <path d="M100 280 Q150 350 200 280" stroke="#4a7a4a" stroke-width="20" fill="none"/>
+  <path d="M80 200 Q60 150 90 120" stroke="#3a5a3a" stroke-width="15" fill="none"/>
+  <path d="M220 200 Q240 150 210 120" stroke="#3a5a3a" stroke-width="15" fill="none"/>
+</svg>

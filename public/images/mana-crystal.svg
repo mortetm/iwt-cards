@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="420" viewBox="0 0 300 420">
+  <defs>
+    <linearGradient id="crystal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a4a"/>
+      <stop offset="100%" style="stop-color:#2a2a6a"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BFFF"/>
+      <stop offset="50%" style="stop-color:#4169E1"/>
+      <stop offset="100%" style="stop-color:#9400D3"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="420" fill="url(#crystal)"/>
+  <polygon points="150,80 200,160 200,280 150,340 100,280 100,160" fill="url(#gem)" stroke="#ADD8E6" stroke-width="2"/>
+  <polygon points="150,100 180,160 180,260 150,310 120,260 120,160" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  <circle cx="150" cy="200" r="20" fill="white" opacity="0.3"/>
+</svg>
