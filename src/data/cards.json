@@ -871,7 +871,7 @@
       "isCharacter": false,
       "type": "player",
       "subtype": "back",
-      "title": "Player deck back",
+      "title": " ",
       "image": "player-deck-back",
       "amount": 45
     },
@@ -880,7 +880,7 @@
       "isCharacter": false,
       "type": "wizard",
       "subtype": "back",
-      "title": "Wizard deck back",
+      "title": " ",
       "image": "wizard-deck-back",
       "amount": 30
     }

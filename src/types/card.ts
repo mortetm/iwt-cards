@@ -43,6 +43,10 @@ export interface TextPosition {
 }
 
 export interface CardTypeStyle {
+  costPosition?: TextPosition;
+  costFontSize?: string;
+  costColor?: string;
+  costTextShadow?: string;
   titlePosition: TextPosition;
   titleFontSize: string;
   titleColor: string;

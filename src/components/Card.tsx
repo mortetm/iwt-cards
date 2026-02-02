@@ -1,5 +1,5 @@
-import { Card as CardType } from '../types/card';
-import { getCardStyle } from '../styles/cardTypes';
+import { Card as CardType } from "../types/card";
+import { getCardStyle } from "../styles/cardTypes";
 
 interface CardProps {
   card: CardType;
@@ -15,22 +15,29 @@ const BLEED_MM = 3;
 const MM_TO_PX = 3.7795275591;
 
 // Determine layout type based on card type
-function getLayoutType(type: string): 'ability' | 'deck' | 'class' {
-  if (type.endsWith('-class')) {
-    return 'class';
+function getLayoutType(type: string): "ability" | "deck" | "class" {
+  if (type.endsWith("-class")) {
+    return "class";
   }
-  if (type === 'player-deck' || type === 'wizard-deck') {
-    return 'deck';
+  if (type === "player-deck" || type === "wizard-deck") {
+    return "deck";
   }
-  return 'ability';
+  return "ability";
+}
+
+// Extract only the number from cost string
+function extractCostNumber(cost: string): string {
+  const match = cost.match(/\d+/);
+  return match ? match[0] : cost;
 }
 
 export default function Card({ card, showBleed = false }: CardProps) {
-  const style = getCardStyle(card.type);
+  // Pass both type and subtype - getCardStyle will use subtype if a style exists for it
+  const style = getCardStyle(card.type, card.subtype);
   const layoutType = getLayoutType(card.type);
 
-  const cardWidth = showBleed ? CARD_WIDTH_MM + (BLEED_MM * 2) : CARD_WIDTH_MM;
-  const cardHeight = showBleed ? CARD_HEIGHT_MM + (BLEED_MM * 2) : CARD_HEIGHT_MM;
+  const cardWidth = showBleed ? CARD_WIDTH_MM + BLEED_MM * 2 : CARD_WIDTH_MM;
+  const cardHeight = showBleed ? CARD_HEIGHT_MM + BLEED_MM * 2 : CARD_HEIGHT_MM;
 
   const widthPx = cardWidth * MM_TO_PX;
   const heightPx = cardHeight * MM_TO_PX;
@@ -41,29 +48,29 @@ export default function Card({ card, showBleed = false }: CardProps) {
       style={{
         width: `${widthPx}px`,
         height: `${heightPx}px`,
-        position: 'relative',
-        overflow: 'hidden',
-        borderRadius: showBleed ? '0' : '8px',
-        boxShadow: showBleed ? 'none' : '0 4px 8px rgba(0,0,0,0.3)',
-        backgroundColor: '#1a1a2e',
+        position: "relative",
+        overflow: "hidden",
+        borderRadius: showBleed ? "0" : "8px",
+        boxShadow: showBleed ? "none" : "0 4px 8px rgba(0,0,0,0.3)",
+        backgroundColor: "#1a1a2e",
       }}
     >
       {/* Background Image */}
       <div
         style={{
-          position: 'absolute',
+          position: "absolute",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
           backgroundImage: `url(${card.backgroundImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       />
 
       {/* Gradient overlay for text readability */}
-      <div
+      {/* <div
         style={{
           position: 'absolute',
           top: 0,
@@ -82,70 +89,73 @@ export default function Card({ card, showBleed = false }: CardProps) {
           height: '55%',
           background: 'linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)',
         }}
-      />
+      /> */}
 
       {/* Layout: Class Ability Cards - Cost top, Title center, Description bottom half */}
-      {layoutType === 'ability' && (
+      {layoutType === "ability" && (
         <>
-          {/* Cost - Top Center */}
+          {/* Cost */}
           {card.cost && (
             <div
               style={{
-                position: 'absolute',
-                top: '8px',
-                left: '0',
-                right: '0',
-                textAlign: 'center',
-                fontSize: '11px',
-                fontWeight: 'bold',
-                color: '#ffffff',
-                textShadow: '1px 1px 3px rgba(0,0,0,0.9)',
+                position: "absolute",
+                top: style.costPosition?.top ?? "8px",
+                bottom: style.costPosition?.bottom,
+                left: style.costPosition?.left ?? "0",
+                right: style.costPosition?.right ?? "0",
+                textAlign: style.costPosition?.textAlign ?? "center",
+                padding: style.costPosition?.padding,
+                fontSize: style.costFontSize ?? "11px",
+                fontWeight: "bold",
+                color: style.costColor ?? "#000",
+                textShadow: style.costTextShadow,
                 fontFamily: '"MAVStudios", Arial, sans-serif',
               }}
             >
-              {card.cost}
+              {extractCostNumber(card.cost)}
             </div>
           )}
 
-          {/* Title - Center Center */}
+          {/* Title */}
           <div
             style={{
-              position: 'absolute',
-              top: '50%',
-              left: '0',
-              right: '0',
-              transform: 'translateY(-100%)',
-              textAlign: 'center',
-              padding: '0 8px',
+              position: "absolute",
+              top: style.titlePosition.top,
+              bottom: style.titlePosition.bottom,
+              left: style.titlePosition.left,
+              right: style.titlePosition.right,
+              textAlign: style.titlePosition.textAlign,
+              padding: style.titlePosition.padding,
               fontSize: style.titleFontSize,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               color: style.titleColor,
               textShadow: style.titleTextShadow,
               fontFamily: '"MAVStudios", "Times New Roman", serif',
-              letterSpacing: '0.5px',
+              letterSpacing: "0.5px",
             }}
           >
             {card.title}
           </div>
 
-          {/* Description - Bottom Half, Center */}
+          {/* Description */}
           <div
             style={{
-              position: 'absolute',
-              top: '52%',
-              left: '0',
-              right: '0',
-              bottom: '8px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textAlign: 'center',
-              padding: '4px 8px',
+              position: "absolute",
+              top: style.descriptionPosition.top,
+              bottom: style.descriptionPosition.bottom,
+              left: style.descriptionPosition.left,
+              right: style.descriptionPosition.right,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: style.descriptionPosition.textAlign,
+              padding: style.descriptionPosition.padding,
               fontSize: style.descriptionFontSize,
               color: style.descriptionColor,
               textShadow: style.descriptionTextShadow,
               fontFamily: '"MAVStudios", Arial, sans-serif',
-              lineHeight: '1.3',
+              lineHeight: "1.3",
+              whiteSpace: "pre-line",
             }}
           >
             <span>{card.description}</span>
@@ -153,66 +163,49 @@ export default function Card({ card, showBleed = false }: CardProps) {
         </>
       )}
 
-      {/* Layout: Deck Cards - Symbol top right, Title center, Description bottom half */}
-      {layoutType === 'deck' && (
+      {/* Layout: Deck Cards - Title center, Description bottom half */}
+      {layoutType === "deck" && (
         <>
-          {/* Symbol - Top Right */}
-          {card.symbol && (
-            <div
-              style={{
-                position: 'absolute',
-                top: '8px',
-                right: '10px',
-                fontSize: '14px',
-                fontWeight: 'bold',
-                color: '#ffffff',
-                textShadow: '1px 1px 3px rgba(0,0,0,0.9)',
-                fontFamily: '"MAVStudios", Arial, sans-serif',
-              }}
-            >
-              {card.symbol}
-            </div>
-          )}
-
-          {/* Title - Center Center */}
+          {/* Title */}
           <div
             style={{
-              position: 'absolute',
-              top: '50%',
-              left: '0',
-              right: '0',
-              transform: 'translateY(-100%)',
-              textAlign: 'center',
-              padding: '0 8px',
+              position: "absolute",
+              top: style.titlePosition.top,
+              bottom: style.titlePosition.bottom,
+              left: style.titlePosition.left,
+              right: style.titlePosition.right,
+              textAlign: style.titlePosition.textAlign,
+              padding: style.titlePosition.padding,
               fontSize: style.titleFontSize,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               color: style.titleColor,
               textShadow: style.titleTextShadow,
               fontFamily: '"MAVStudios", "Times New Roman", serif',
-              letterSpacing: '0.5px',
+              letterSpacing: "0.5px",
             }}
           >
             {card.title}
           </div>
 
-          {/* Description - Bottom Half, Center */}
+          {/* Description */}
           <div
             style={{
-              position: 'absolute',
-              top: '52%',
-              left: '0',
-              right: '0',
-              bottom: '8px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textAlign: 'center',
-              padding: '4px 8px',
+              position: "absolute",
+              top: style.descriptionPosition.top,
+              bottom: style.descriptionPosition.bottom,
+              left: style.descriptionPosition.left,
+              right: style.descriptionPosition.right,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: style.descriptionPosition.textAlign,
+              padding: style.descriptionPosition.padding,
               fontSize: style.descriptionFontSize,
               color: style.descriptionColor,
               textShadow: style.descriptionTextShadow,
               fontFamily: '"MAVStudios", Arial, sans-serif',
-              lineHeight: '1.3',
+              lineHeight: "1.3",
+              whiteSpace: "pre-line",
             }}
           >
             <span>{card.description}</span>
@@ -221,23 +214,23 @@ export default function Card({ card, showBleed = false }: CardProps) {
       )}
 
       {/* Layout: Class Cards - Title centered at 40%, Description at bottom */}
-      {layoutType === 'class' && (
+      {layoutType === "class" && (
         <>
           {/* Title - Center */}
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
               top: style.titlePosition.top,
               left: style.titlePosition.left,
               right: style.titlePosition.right,
               textAlign: style.titlePosition.textAlign,
               padding: style.titlePosition.padding,
               fontSize: style.titleFontSize,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               color: style.titleColor,
               textShadow: style.titleTextShadow,
               fontFamily: '"MAVStudios", "Times New Roman", serif',
-              letterSpacing: '0.5px',
+              letterSpacing: "0.5px",
             }}
           >
             {card.title}
@@ -246,7 +239,7 @@ export default function Card({ card, showBleed = false }: CardProps) {
           {/* Description - Bottom */}
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
               top: style.descriptionPosition.top,
               left: style.descriptionPosition.left,
               right: style.descriptionPosition.right,
@@ -257,7 +250,8 @@ export default function Card({ card, showBleed = false }: CardProps) {
               color: style.descriptionColor,
               textShadow: style.descriptionTextShadow,
               fontFamily: '"MAVStudios", Arial, sans-serif',
-              lineHeight: '1.3',
+              lineHeight: "1.3",
+              whiteSpace: "pre-line",
             }}
           >
             {card.description}
@@ -266,18 +260,18 @@ export default function Card({ card, showBleed = false }: CardProps) {
       )}
 
       {/* Class indicator - only for non-class cards */}
-      {layoutType !== 'class' && (
+      {layoutType !== "class" && (
         <div
           style={{
-            position: 'absolute',
-            top: '50%',
-            left: '4px',
-            transform: 'translateY(-50%) rotate(-90deg)',
-            transformOrigin: 'left center',
-            fontSize: '7px',
-            color: 'rgba(255,255,255,0.5)',
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
+            position: "absolute",
+            top: "50%",
+            left: "4px",
+            transform: "translateY(-50%) rotate(-90deg)",
+            transformOrigin: "left center",
+            fontSize: "7px",
+            color: "rgba(255,255,255,0.5)",
+            textTransform: "uppercase",
+            letterSpacing: "1px",
           }}
         >
           {card.class || card.type}
